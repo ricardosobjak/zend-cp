@@ -1,0 +1,55 @@
+<h2>Lista dos Fotolitos</h2>
+
+<table class="table1">
+	<thead>
+		<tr>
+			<th colspan="10">Fotolitos em produção (ainda não foram impressos)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Descrição</th>
+			<th>Data de Cadastro</th>
+			<th>Data de Finalização</th>
+			<th>Tipo (off/silk)</th>
+			<th>Tipo (Frete/Ver/Lado)</th>
+		</tr>
+		<?php foreach ($this->fotolitos_producao as $item) { ?>
+			<tr>
+				<th class="sub"><?=$item['descricao']?></th>
+				<td><?=$item['data_inicio_producao']?></td>
+				<td><?=$item['data_fim_producao']?></td>
+				<td><?=$item['tipo']?></td>
+				<td>Não Definido</td>
+			</tr>
+		<?php } ?>
+		
+	</tbody>
+</table>
+<br />
+<table class="table1">
+	<thead>
+		<tr>
+			<th colspan="10">Todos os Fotolitos Cadastrados (Impressos ou não)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Descrição</th>
+			<th>Data de Cadastro</th>
+			<th>Data de Finalização</th>
+			<th>Tipo (off/silk)</th>
+			<th>Tipo (Frete/Ver/Lado)</th>
+		</tr>
+		<?php foreach ($this->fotolitos as $item) { ?>
+			<tr>
+				<th class="sub"><?=$item['descricao']?></th>
+				<td><?=$item['data_inicio_producao']?></td>
+				<td><?=$item['data_fim_producao']?></td>
+				<td><?=$item['tipo']?></td>
+				<td>Não Definido</td>
+			</tr>
+		<?php } ?>
+		
+	</tbody>
+</table>
