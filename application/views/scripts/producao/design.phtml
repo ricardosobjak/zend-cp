@@ -1,0 +1,27 @@
+<h2>Lista dos Layouts</h2>
+<table class="table1">
+	<thead>
+		<tr>
+			<th colspan="10">Layouts Produzidos</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Descrição</th>
+			<th>Cor do Viés</th>
+			<th>Cor da Ribana</th>
+			<th>Tipo de Tecido</th>
+			<th>Imagem</th>
+		</tr>
+		<?php foreach ($this->layouts as $item) { ?>
+			<tr>
+				<th class="sub"><?=$item['descricao']?></th>
+				<td><?=$item['cor_vies']?></td>
+				<td><?=$item['cor_ribana']?></td>
+				<td><?=$item['tecido']?></td>
+				<td><img src="<?=$item['url_estampa']?>_thumb.jpg"></img></td>
+			</tr>
+		<?php } ?>
+		
+	</tbody>
+</table>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+	<nav-secondary>
+		<menu>
+			<label>Producao</label>
+			<uri>/producao</uri>
+			<pages>
+				<design class="first">
+					<label>Design</label>
+					<uri>/producao/design</uri>
+				</design>
+				<fotolito>
+					<label>Fotolito</label>
+					<uri>/producao/fotolito</uri>
+				</fotolito>
+				<revelacao>
+					<label>Revelacao</label>
+					<uri>/producao/revelacao</uri>
+				</revelacao>
+				<impressao>
+					<label>Impressao</label>
+					<uri>/producao/impressao</uri>
+				</impressao>
+				<transferencia>
+					<label>Transferencia</label>
+					<uri>/producao/transferencia</uri>
+				</transferencia>
+				<cortecostura>
+					<label>Corte e Costura</label>
+					<uri>/producao/cortecostura</uri>
+				</cortecostura>
+				<acabamentoembalagem class="last">
+					<label>Acabamento e Embalagem</label>
+					<uri>/producao/acabamentoembalagem</uri>
+				</acabamentoembalagem>
+			</pages>
+		</menu>
+	</nav-secondary>	
+</configdata>

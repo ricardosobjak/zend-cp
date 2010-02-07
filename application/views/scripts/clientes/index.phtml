@@ -1,0 +1,37 @@
+<h2>Lista dos Clientes</h2>
+<table class="table1">
+	<thead>
+		<tr>
+			<th colspan="10">Clientes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Nome</th>
+			<th>Endereço</th>
+			<th>Bairro</th>
+			<th>Cidade</th>
+			<th>Estado</th>
+			<th>CEP</th>
+			<th>Email</th>
+			<th>Telefone</th>
+			<th>Contato</th>
+			<th>CNPJ/CPF</th>
+		</tr>
+		<?php foreach ($this->clientes as $cliente) { ?>
+			<tr>
+				<th class="sub"><?=$cliente['nome']?></th>
+				<td><?=$cliente['endereco']?></td>
+				<td><?=$cliente['bairro']?></td>
+				<td><?=$cliente['cidade']?></td>
+				<td><?=$cliente['uf']?></td>
+				<td><?=$cliente['cep']?></td>
+				<td><?=$cliente['email']?></td>
+				<td><?=$cliente['telefone']?></td>
+				<td><?=$cliente['contato']?></td>
+				<td><?=$cliente['cnpj_cpf']?></td>
+			</tr>
+		<?php } ?>
+		
+	</tbody>
+</table>
