@@ -1,0 +1,5 @@
+ @author adrianomelo
+
+
+ - The Zend library must be in this folder. /trunk/library/Zend
+ - We are using Zend Framework 1.9.5
