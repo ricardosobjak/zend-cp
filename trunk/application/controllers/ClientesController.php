@@ -13,7 +13,5 @@ class ClientesController extends Zend_Controller_Action
         $rowset = $this->clientes->GetAllByName();
         $this->view->clientes = $rowset->toArray();
     }
-
-
 }
 

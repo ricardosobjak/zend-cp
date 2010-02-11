@@ -6,7 +6,7 @@ class App_Repository_Abstract {
 	public $modelo;
 	
 	protected $options = array(
-		'host'     => 'localhost',
+		'host'     => '127.0.0.1',
 		'username' => 'root',
 		'password' => '',
 		'dbname'   => 'mila'
