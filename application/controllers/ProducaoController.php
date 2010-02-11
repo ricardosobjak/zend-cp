@@ -28,27 +28,31 @@ class ProducaoController extends Zend_Controller_Action
 
     public function revelacaoAction()
     {
-        // action body
+        $repositorio = new App_Repository_Revelacao();
+        $this->view->telas = $repositorio->GetAll();
     }
 
     public function impressaoAction()
     {
-        // action body
+        $repositorio = new App_Repository_Impressao();
+        $this->view->papeis = $repositorio->GetAll();
     }
 
     public function transferenciaAction()
     {
-        // action body
+        
     }
 
     public function cortecosturaAction()
     {
-        // action body
+        $repositorio = new App_Repository_CorteCostura();
+        $this->view->pecas = $repositorio->GetAll();
     }
 
     public function acabamentoembalagemAction()
     {
-        // action body
+        $repositorio = new App_Repository_AcabamentoEmbalagem();
+        $this->view->pecas = $repositorio->GetAll();
     }
 
 
